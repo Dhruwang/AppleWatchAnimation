@@ -1,7 +1,10 @@
+
 body{
     font-family: myFirstFont;
     text-align: center;
     scroll-behavior: smooth;
+    background:linear-gradient(to right, white 25%,lightgreen 25% 50%,grey 50% 75%,lightblue 75%) left ;
+    background-size : 400%
 }
 .navbarCustom{
     background-color: #000000CC;
@@ -14,7 +17,6 @@ body{
     src: url(SF-Pro-Text-Medium.otf);
   }
   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
-
 .container-left{
     /* border: 2px solid red; */
     text-align: start;
@@ -59,9 +61,4 @@ img{
 }
 #circle4{
     background-color: black;
-}
-body {
-    text-align: center;
-    color: white;
-
 }

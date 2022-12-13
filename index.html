@@ -41,11 +41,11 @@
             <hr>
             <div class="d-flex">
 
-                    <div class="circles" id="circle1" onclick="changeColor(0,1)"></div>
+                    <div class="circles" id="circle1" onclick="changeColor(0,1,'white','white')"></div>
                 
-                <div class="circles" id="circle2" onclick="changeColor(90,2)"></div>
-                <div class="circles" id="circle3" onclick="changeColor(180,3)"></div>
-                <div class="circles" id="circle4" onclick="changeColor(270,4)"></div>
+                <div class="circles" id="circle2" onclick="changeColor(90,2,'white','pink')"></div>
+                <div class="circles" id="circle3" onclick="changeColor(180,3,'grey','pink')"></div>
+                <div class="circles" id="circle4" onclick="changeColor(270,4,'grey','lightblue')"></div>
             </div>
         </div>  
         <div class="container-right mx-auto col-md-6 d-flex flex-column justify-content-center">
@@ -58,7 +58,9 @@
     let watchimg = document.getElementById('watchimg')
     let allCircles = document.getElementsByClassName("circles")
     let rotateValue = 0
-    const changeColor=(deg,num)=>{
+    const changeColor=(deg,num,color1,color2)=>{
+        document.body.style.transition = "0.7s ease-in-out"
+        document.body.style.backgroundPosition =`${((num-1)*100)/3}%`
         let circle = document.getElementById(`circle${num}`)
         for (let index = 1; index <5 ; index++) {
             document.getElementById(`circle${index}`).style.outlineColor = "white"
