@@ -3,7 +3,7 @@ body{
     font-family: myFirstFont;
     text-align: center;
     scroll-behavior: smooth;
-    background:linear-gradient(to right, white 25%,lightgreen 25% 50%,grey 50% 75%,lightblue 75%) left ;
+    background:linear-gradient(to right, white 25%,rgb(236, 196, 255) 25% 50%,grey 50% 75%,lightblue 75%) left ;
     background-size : 400%
 }
 .navbarCustom{
@@ -35,7 +35,7 @@ body{
 img{
     transition: all 0.5s ease-in-out;
     height: 275%;
-    width: 275%;
+    width: 265%;
 }
 
 /* .container-right:hover > img{
@@ -57,7 +57,7 @@ img{
     background-color: orange;
 }
 #circle3{
-    background-color: grey;
+    background-color: rgb(213, 213, 213);
 }
 #circle4{
     background-color: black;
