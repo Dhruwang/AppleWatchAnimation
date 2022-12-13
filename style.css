@@ -1,6 +1,7 @@
 body{
     font-family: myFirstFont;
     text-align: center;
+    scroll-behavior: smooth;
 }
 .navbarCustom{
     background-color: #000000CC;
@@ -24,18 +25,43 @@ body{
     color: orangered;
 }
 .container-right{
-    height: 100vh;
+    height: 90vh;
     /* border: 2px solid rgb(80, 192, 86); */
     width: 50vw;
     overflow: hidden;
-    transition: all 1s ease-in-out;
 }
 img{
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     height: 275%;
     width: 275%;
 }
 
-.container-right:hover > img{
+/* .container-right:hover > img{
     transform: rotate(-90deg);
+} */
+.circles{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-right: 1rem;
+    outline: solid 2px white;
+    outline-offset: 4px;
+}
+
+#circle1{
+    background-color: yellow;
+}
+#circle2{
+    background-color: orange;
+}
+#circle3{
+    background-color: grey;
+}
+#circle4{
+    background-color: black;
+}
+body {
+    text-align: center;
+    color: white;
+
 }

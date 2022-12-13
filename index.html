@@ -37,13 +37,39 @@
             <p class="p1">From ₹10581.00/mo.Per Month with EMI,Footnote** or ₹89900.00Footnote‡</p>
             <p class="p2">The aerospace-grade titanium case strikes the perfect balance of weight, durability and corrosion resistance.</p>
             <p class="p2">The rugged Alpine Loop is made from two textile layers woven together into one continuous piece without stitching, with a titanium G-hook to ensure a secure fit.</p>
-        </div>    
+            <P class="text-dark mb-0 fs-5">Strap Colours</P>
+            <hr>
+            <div class="d-flex">
+
+                    <div class="circles" id="circle1" onclick="changeColor(0,1)"></div>
+                
+                <div class="circles" id="circle2" onclick="changeColor(90,2)"></div>
+                <div class="circles" id="circle3" onclick="changeColor(180,3)"></div>
+                <div class="circles" id="circle4" onclick="changeColor(270,4)"></div>
+            </div>
+        </div>  
         <div class="container-right mx-auto col-md-6 d-flex flex-column justify-content-center">
-            <img src="./demo2.png">
+            <img src="./demo2.png" id="watchimg">
         </div>    
     </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script>
+    let watchimg = document.getElementById('watchimg')
+    let allCircles = document.getElementsByClassName("circles")
+    let rotateValue = 0
+    const changeColor=(deg,num)=>{
+        let circle = document.getElementById(`circle${num}`)
+        for (let index = 1; index <5 ; index++) {
+            document.getElementById(`circle${index}`).style.outlineColor = "white"
+            
+        }
+        document.getElementById(`circle${num}`)
+        circle.style.outlineColor = "blue"
+        watchimg.style.transform = `rotate(${deg}deg)`
+    }
+</script>
+
 </body>
 
 </html>
