@@ -2,7 +2,7 @@
 
 A homepge for Apple Watch Ultra using HTML,CSS and JS with cool animations 
 - It is not yet responsive as i dont know how can I present this animations on small screen devices.If you have some kind of idea contact me on :
-
+- Site live at : https://applewatchjd.netlify.app/
 - Twitter : https://twitter.com/DhruwangJariwa1
 - LinkedIn : https://www.linkedin.com/in/dhruwang-jariwala-068797207/
 
